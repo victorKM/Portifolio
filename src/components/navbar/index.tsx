@@ -1,11 +1,26 @@
 "use client"
 
 import { IoMenu } from "react-icons/io5";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
 
-  let [open,setOpen] = useState(false);
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(min-width: 768px)"); // Define a media query para telas maiores que 768px
+
+    const handleResize = () => {
+      if (mediaQuery.matches) { // Se a tela atender à condição da media query
+        setOpen(false); // Defina open como false
+      }
+    };
+
+    // Adiciona um listener de evento para redimensionamento da janela
+    window.addEventListener("resize", handleResize);
+
+    // Remove o listener de evento quando o componente é desmontado
+    return () => window.removeEventListener("resize", handleResize);
+  }, []); 
 
   return (
     <div>
@@ -56,4 +71,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;
