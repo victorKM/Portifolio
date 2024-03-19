@@ -16,7 +16,7 @@ const About = () => {
       <div className="grid md:grid-cols-2 grid-cols-1 lg:space-x-0 md:space-x-8 md:space-y-0 space-y-10">
         <div className="flex lg:justify-end justify-center items-center lg:pr-20">
           <img
-            src="https://media.licdn.com/dms/image/C4D03AQGRH8cRF2jytA/profile-displayphoto-shrink_200_200/0/1649117623973?e=1716422400&v=beta&t=Y5Sf4VPuciAoeJ3SSjXy7oWuZqotvfo0i0OnPpSUA-w"
+            src="https://avatars.githubusercontent.com/u/83183630?v=4"
             alt=""
             className="md:w-96 md:h-96 w-80 h-80 rounded-full"
           />
