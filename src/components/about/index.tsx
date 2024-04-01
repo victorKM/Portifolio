@@ -12,7 +12,7 @@ const About = () => {
   };
 
   return (
-    <div className="absolute w-full z-[-2] bg-white py-20 md:px-4 px-6">
+    <div className="bg-white py-20 md:px-4 px-6">
       <div className="grid md:grid-cols-2 grid-cols-1 lg:space-x-0 md:space-x-8 md:space-y-0 space-y-10">
         <div className="flex lg:justify-end justify-center items-center lg:pr-20">
           <img

@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className="bg-mid-blue px-10 py-10 flex md:flex-row md:items-center flex-col justify-between">
         <div className="text-white lg:text-3xl text-2xl font-bold flex flex-row justify-between">
           <div>
-              Victor
+              Victor K. Maceron
           </div>
           <div  className='text-3xl cursor-pointer md:hidden'>
               <IoMenu className="text-white" onClick={()=>setOpen(!open)}/>
