@@ -29,7 +29,7 @@ const About = () => {
             Computer Science Student
           </div>
           <div className='lg:text-5xl md:text-3xl text-3xl'>
-            I'm <strong>Victor Kikuti Maceron</strong>
+            I&apos;m <strong>Victor Kikuti Maceron</strong>
           </div>
           <div className='lg:text-xl md:text-lg text-lg'>
             I am a Computer Science student at the University of São Paulo. I
