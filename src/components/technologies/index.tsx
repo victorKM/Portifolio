@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from 'next/image'
 
 const Technologies = () => {
   return (
@@ -17,14 +18,14 @@ const Technologies = () => {
                   </div>
                   <div className="flex justify-center items-center">
                     <div className="grid grid-cols-3 gap-7">
-                      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" className="w-12 h-12"/>
-                      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968381.png" alt="TypeScript" className="w-12 h-12" />
-                      <img src="https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png" alt="Node.js" className="w-12 h-12" />
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="React" className="w-12 h-12" />
-                      <img src="https://static-00.iconduck.com/assets.00/next-js-icon-512x512-zuauazrk.png" alt="Next.js" className="w-12 h-12" />
-                      <img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="Tailwind" className="w-12 h-12" />
-                      <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML" className="w-12 h-12" />
-                      <img src="https://static-00.iconduck.com/assets.00/file-type-css-icon-1806x2048-r5fwjl3p.png" alt="CSS" className="w-12 h-12" />
+                      <Image src="./javascript.png" width={48} height={48} alt="JavaScript"/>
+                      <Image src="./typescript.png" width={48} height={48} alt="TypeScript"/>
+                      <Image src="./node.png" width={48} height={48} alt="Node.js"/>
+                      <Image src="./react.png" width={48} height={48} alt="React"/>
+                      <Image src="./next.png" width={48} height={48} alt="Next.js"/>
+                      <Image src="./tailwind.png" width={48} height={48} alt="Tailwind"/>
+                      <Image src="./html.png" width={48} height={48} alt="HTML"/>
+                      <Image src="./css.png" width={44} height={44} alt="CSS"/>
                     </div>
                   </div>
               </div>
@@ -36,8 +37,8 @@ const Technologies = () => {
                   </div>
                   <div className="flex justify-center items-center">
                     <div className="grid grid-cols-2 gap-12">
-                        <img src="https://static-00.iconduck.com/assets.00/postgresql-icon-497x512-at6qw0yb.png" alt="PostgreSQL" className="w-32 h-32" />
-                        <img src="https://cdn.iconscout.com/icon/free/png-256/free-mysql-3628940-3030165.png?f=webp" alt="MySQL" className="w-32 h-32"/>
+                        <Image src="./postgre.png"  width={128} height={128} alt="PostgreSQL"/>
+                        <Image src="./mysql.png"  width={128} height={128} alt="MySQL"/>
                     </div>
                   </div>
               </div>
@@ -49,11 +50,11 @@ const Technologies = () => {
                   </div>
                   <div className="flex justify-center items-center pb-2">
                     <div className="grid grid-cols-3 gap-7 pb-4">
-                        <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/c_original_logo_icon_146611.png" alt="C" className="w-16 h-16" />
-                        <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C++" className="w-16 h-16" />
-                        <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" alt="Python" className="w-16 h-16"/>
-                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" alt="Java" className="w-16 h-16"/>
-                        <img src="https://static-00.iconduck.com/assets.00/c-sharp-c-icon-1822x2048-wuf3ijab.png" alt="C#" className="w-16 h-16"/> 
+                        <Image src="./C.png" width={64} height={64} alt="C"/>
+                        <Image src="./C++.png" alt="C++" width={64} height={64}/>
+                        <Image src="./python.png" width={64} height={64} alt="Python"/>
+                        <Image src="./java.png" alt="Java" width={64} height={64}/>
+                        <Image src="./Csharp.png" width={64} height={64} alt="C#"/> 
                     </div>
                   </div>
               </div>
