@@ -36,7 +36,7 @@ const About = () => {
             enjoy working in teams, as well as being proactive and curious to
             learn new technologies.
           </div>
-          <div className='font-bold hover:cursor-pointer lg:space-x-4 md:space-x-2 space-x-1'>
+          {/* <div className='font-bold hover:cursor-pointer lg:space-x-4 md:space-x-2 space-x-1'>
             <div
               className='bg-light-blue md:text-md text-sm inline-block lg:px-6 md:px-5 px-3 md:py-3 py-3 rounded-md transition-transform transform hover:scale-105 hover:text-white'
               onClick={() => handleDownload('')}
@@ -51,7 +51,7 @@ const About = () => {
             >
               Download CV(en)
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
