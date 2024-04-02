@@ -39,13 +39,15 @@ const About = () => {
           <div className='font-bold hover:cursor-pointer lg:space-x-4 md:space-x-2 space-x-1'>
             <div
               className='bg-light-blue md:text-md text-sm inline-block lg:px-6 md:px-5 px-3 md:py-3 py-3 rounded-md transition-transform transform hover:scale-105 hover:text-white'
-              onClick={() => handleDownload('https://drive.usercontent.google.com/u/0/uc?id=1WIQ_u-YvxuW56ItIA4m_AcmgPMUJM5qy&export=download')}
+              onClick={() => handleDownload('')}
+              //https://drive.usercontent.google.com/u/0/uc?id=1WIQ_u-YvxuW56ItIA4m_AcmgPMUJM5qy&export=download
             >
               Download CV
             </div>
             <div
               className='bg-light-blue md:text-md text-sm inline-block lg:px-6 md:px-5 px-3 md:py-3 py-3 rounded-md transition-transform transform hover:scale-105 hover:text-white'
-              onClick={() => handleDownload('https://drive.usercontent.google.com/u/0/uc?id=1tnHBffDHDy8zA1YZnYw1G6DlTLfs8bpz&export=download')}
+              onClick={() => handleDownload('')}
+              //https://drive.usercontent.google.com/u/0/uc?id=1tnHBffDHDy8zA1YZnYw1G6DlTLfs8bpz&export=download
             >
               Download CV(en)
             </div>
