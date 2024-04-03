@@ -101,7 +101,7 @@ const Images = ({imgIndex, images} : {imgIndex: number; images: string[]}) => {
                 scale: imgIndex === idx ? 1.00 : 0.85,
               }}
               transition = {SPRING_OPTIONS}
-              className="w-full h-48 shrink-0 rounded-xl object-cover"
+              className="w-full h-80 shrink-0 rounded-xl object-cover"
             />
       );
     })}
@@ -115,13 +115,13 @@ const Dots = ({imgIndex, setImgIndex, images} : {
   images: string[];
   }) => {
   return (
-    <div className="mt-4 flex w-full justify-center gap-2">
+    <div className="mt-4 flex w-full justify-center gap-6">
         {images.map((_,idx) => {
           return <button
           key={idx}
           onClick={() => setImgIndex(idx)}
           className={`h-3 w-3 rounded-full transition-colors ${
-            idx === imgIndex ? "bg-mid-blue" : "bg-light-blue"
+            idx === imgIndex ? "bg-black bg-opacity-100" : "bg-black bg-opacity-20"
           }`}
           />
         })}

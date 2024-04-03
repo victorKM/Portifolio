@@ -5,14 +5,14 @@ import Image from 'next/image'
 
 const Technologies = () => {
   return (
-    <div className="w-full pb-20 lg:px-17 md:px-15 px-10">
+    <div className="w-full pb-20 lg:px-17 md:px-15 px-10 font-poppins">
       <div className="text-center md:text-3xl text-2xl font-bold mb-10">
         Technologies
       </div>
       <div className="flex justify-center">
         <div className="flex flex-wrap lg:w-11/12 justify-center lg:space-x-0 md:space-y-0 space-y-4 -mx-2">
             <div className="lg:w-1/3 md:w-1/2 w-full lg:px-8 md:px-4">
-              <div className="px-4 py-5 border-2 border-light-blue text-center h-full">
+              <div className="px-4 py-5 rounded-lg bg-white bg-opacity-100 text-center h-full shadow-2xl">
                   <div className="md:text-2xl text-lg font-bold mb-5">
                     Web
                   </div>
@@ -25,14 +25,14 @@ const Technologies = () => {
                       <Image src="./next.png" width={48} height={48} alt="Next.js"/>
                       <Image src="./tailwind.png" width={48} height={48} alt="Tailwind"/>
                       <Image src="./html.png" width={48} height={48} alt="HTML"/>
-                      <Image src="./css.png" width={44} height={44} alt="CSS"/>
+                      <Image src="./css.png" width={48} height={48} alt="CSS"/>
                     </div>
                   </div>
               </div>
             </div>
             <div className="lg:w-1/3 md:w-1/2 w-full lg:px-8 md:px-4">
-              <div className="px-4 py-5 border-2 border-light-blue text-center h-full">
-                  <div className="md:text-2xl text-lg font-bold mb-10">
+              <div className="px-4 py-5 rounded-lg bg-white bg-opacity-100 text-center h-full shadow-2xl">
+                  <div className="md:text-2xl text-lg font-bold md:mb-14 mb-10">
                     Database
                   </div>
                   <div className="flex justify-center items-center">
@@ -44,7 +44,7 @@ const Technologies = () => {
               </div>
             </div>
             <div className="lg:w-1/3 md:w-1/2 w-full lg:px-8 md:px-4">
-              <div className="px-4 py-5 border-2 border-light-blue text-center h-full lg:mt-0 md:mt-8 mt-0"> 
+              <div className="px-4 py-5 rounded-lg bg-white bg-opacity-100 text-center h-full lg:mt-0 md:mt-8 mt-0 shadow-2xl"> 
                   <div className="md:text-2xl text-lg font-bold mb-6">
                     Application
                   </div>

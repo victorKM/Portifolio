@@ -14,7 +14,7 @@ const imgs = [
 
 const Proj = () => {
   return (
-    <div className="w-full pb-20 lg:px-17 md:px-15 px-10">
+    <div className="w-full pb-20 lg:px-17 md:px-15 px-10 font-poppins">
       <div className="text-center md:text-3xl text-2xl font-bold mb-10">
         Projects
       </div>
@@ -22,7 +22,7 @@ const Proj = () => {
           <div className="grid md:grid-cols-2 grid-cols-1 xl:gap-96 lg:gap-34 md:gap-28 gap-12">
               <div>
                 <div className="text-xl font-bold mb-2">
-                  Historical Museum of the Ribeirão Preto Medical School Site
+                  Historical Museum of the Ribeirão Preto Medical School
                 </div>
                 <div>
                    <SwipeCarousel images={imgs}></SwipeCarousel>
@@ -46,7 +46,7 @@ const Proj = () => {
                   Solar Energy Company
                 </div>
                 <div>
-
+                  <SwipeCarousel images={imgs}></SwipeCarousel>
                 </div>
                 <div className="text-xl">
                   <div className="mb-3">
@@ -56,7 +56,7 @@ const Proj = () => {
                   <ul className="list-disc px-8">
                     <li>Used Next.js framework for interface</li>
                     <li>Used Tailwind for style</li>
-                    <li>Used Typescript for frontedn</li>
+                    <li>Used Typescript for frontend</li>
                   </ul>
                 </div>
               </div>

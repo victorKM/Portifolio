@@ -8,11 +8,12 @@ const config: Config = {
   ],
   theme: {
     colors: {
-        'dark-blue': '#3B7B9A',
-        'mid-blue': '#70AFCE',
-        'light-blue': '#A5DEF1',
+        'dark-blue': '#1463F3',
+        'mid-blue': '#1463F3',
+        'light-blue': '#1463F3',
         'white': '#FFFFFF',
-        'gray': '#828282'
+        'gray': '#f5f5f7',
+        'black': '#000000',
     },
     extend: {
       backgroundImage: {
@@ -20,6 +21,9 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        'poppins': ['Poppins'],
+      }
     },
   },
   plugins: [],
