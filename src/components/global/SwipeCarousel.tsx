@@ -98,10 +98,10 @@ const Images = ({imgIndex, images} : {imgIndex: number; images: string[]}) => {
                 backgroundPosition: 'center'
               }}
               animate={{
-                scale: imgIndex === idx ? 0.95 : 0.85,
+                scale: imgIndex === idx ? 1.00 : 0.85,
               }}
               transition = {SPRING_OPTIONS}
-              className="w-full h-48 shrink-0 rounded-xl bg-neutral-800 object-cover"
+              className="w-full h-48 shrink-0 rounded-xl object-cover"
             />
       );
     })}
