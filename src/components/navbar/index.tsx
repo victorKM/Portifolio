@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="px-10 py-10 flex md:flex-row md:items-center flex-col justify-between font-poppins">
+      <div className="fixed top-0 w-full z-50 bg-gray shadow px-10 pt-10 pb-5 flex md:flex-row md:items-center flex-col justify-between font-poppins">
         <div className="text-black lg:text-3xl text-xl font-bold flex flex-row justify-between">
           <div>
               Victor K. Maceron
@@ -36,34 +36,34 @@ const Navbar = () => {
         <div className={`md:block hidden`}>
           <ul className="lg:text-xl text-lg font-bold flex md:flex-row flex-col md:space-x-8 md:space-y-0 space-y-4 md:mt-0 mt-8">
             <li className="pb-2 border-b-2 border-gray border-opacity-70 hover:border-opacity-100 hover:border-mid-blue hover:cursor-pointer text-black transition duration-500">
-              <a href="">About Me</a>
+              <a href="#about">About Me</a>
             </li>
             <li className="pb-2 border-b-2 border-gray border-opacity-70 hover:border-opacity-100 hover:border-mid-blue hover:cursor-pointer text-black transition duration-500">
-              <a href="">Technologies</a>
+              <a href="#technologies">Technologies</a>
             </li>
             <li className="pb-2 border-b-2 border-gray border-opacity-70 hover:border-opacity-100 hover:border-mid-blue hover:cursor-pointer text-black transition duration-500">
-              <a href="">Projects</a>
+              <a href="#projects">Projects</a>
             </li>
             <li className="pb-2 border-b-2 border-gray border-opacity-70 hover:border-opacity-100 hover:border-mid-blue hover:cursor-pointer text-black transition duration-5  00">
-              <a href="">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
 
-      <div className={`bg-gray bg-opacity-50 text-white text-lg font-bold px-10 py-10 md:hidden transition-all ease-in duration-300 absolute w-full z-[-1] ${open ? '' : 'transform -translate-y-full'}`}>
+      <div className={`fixed top-16 bg-gray bg-opacity-95 text-white text-lg font-bold px-10 py-10 md:hidden transition-all ease-in duration-300 w-full z-10 ${open ? '' : 'transform -translate-y-full'}`}>
         <ul className={`text-lg text-black font-bold flex flex-col md:space-x-8 md:space-y-0 space-y-4 md:mt-0`}>
           <li className="transition duration-300 hover:translate-y-[-3px] hover:cursor-pointer">
-            <a href="">About Me</a>
+            <a href="#about">About Me</a>
           </li>
           <li className="transition duration-300 hover:translate-y-[-3px] hover:cursor-pointer">
-            <a href="">Technologies</a>
+            <a href="#technologies">Technologies</a>
           </li>
           <li className="transition duration-300 hover:translate-y-[-3px] hover:cursor-pointer">
-            <a href="">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li className="transition duration-300 hover:translate-y-[-3px] hover:cursor-pointer">
-            <a href="">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>

@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const Technologies = () => {
   return (
-    <div className="w-full pb-20 lg:px-17 md:px-15 px-10 font-poppins">
+    <div id="technologies" className="w-full pt-40 pb-20 lg:px-17 md:px-15 px-10 font-poppins">
       <div className="text-center md:text-3xl text-2xl font-bold mb-10">
         Technologies
       </div>

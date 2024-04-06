@@ -13,7 +13,7 @@ const About = () => {
   };
 
   return (
-    <div className='py-20 md:px-4 px-6 font-poppins'>
+    <div id="about" className='pb-20 pt-36 md:px-4 px-6 font-poppins'>
       <div className='grid md:grid-cols-2 grid-cols-1 lg:space-x-0 md:space-x-8 md:space-y-0 space-y-10'>
         <div className='flex lg:justify-end justify-center items-center lg:pr-20'>
           <Image
@@ -39,7 +39,7 @@ const About = () => {
           <div className='font-bold hover:cursor-pointer lg:space-x-4 md:space-x-2 space-x-1'>
             <div
               className='bg-light-blue md:text-md text-sm inline-block lg:px-6 md:px-5 px-3 md:py-3 py-3 rounded-md transition-transform transition duration-500 
-              transform hover:scale-105 text-white shadow-2xl'
+              transform hover:scale-105 text-white'
               onClick={() => handleDownload('a')}
               // https://drive.usercontent.google.com/u/0/uc?id=1T3ymFHTGxWoiUnteDBwTxRR0gFqJoqXP&export=download
             >
@@ -47,7 +47,7 @@ const About = () => {
             </div>
             <div
               className='bg-light-blue md:text-md text-sm inline-block lg:px-6 md:px-5 px-3 md:py-3 py-3 rounded-md transition-transform 
-              transition duration-500 transform hover:scale-105 text-white shadow-2xl'
+              transition duration-500 transform hover:scale-105 text-white'
               onClick={() => handleDownload('a')}
               //https://drive.usercontent.google.com/u/0/uc?id=10gS9O20-4CYOyKyZ95GUMm0SJOrNyUiI&export=download
             >

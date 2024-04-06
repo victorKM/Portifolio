@@ -94,14 +94,16 @@ const Images = ({imgIndex, images} : {imgIndex: number; images: string[]}) => {
               key={idx}
               style = {{
                 backgroundImage: `url(${imgSrc})`,
-                backgroundSize: 'cover', 
-                backgroundPosition: 'center'
+                backgroundSize: '100% 100%', 
+                backgroundPosition: 'center',
+                maxWidth: '100%', // Definindo largura máxima
+                maxHeight: '100%', // Definindo altura máxima
               }}
               animate={{
-                scale: imgIndex === idx ? 1.00 : 0.85,
+                scale: imgIndex === idx ? 1.0 : 0.85,
               }}
               transition = {SPRING_OPTIONS}
-              className="w-full h-80 shrink-0 rounded-xl object-cover"
+              className="w-full h-96 shrink-0 rounded-xl object-cover"
             />
       );
     })}

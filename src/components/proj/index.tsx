@@ -3,31 +3,43 @@
 import React, { useEffect, useState } from "react";
 import SwipeCarousel from '@/components/global/SwipeCarousel'
 
-const imgs = [
-  "./image.png",
-  "./image.png",
-  "./image.png",
-  "./image.png",
-  "./image.png",
-  "./image.png",
+const fsolar = [
+  "./fsolar1.jpeg",
+  "./fsolar2.jpeg",
+  "./fsolar3.jpeg",
+  "./fsolar4.jpeg",
+  "./fsolar5.jpeg",
+  "./fsolar6.jpeg",
+  "./fsolar7.jpeg",
+  "./fsolar8.jpeg",
 ];
+
+const museu = [
+  "./museu1.jpeg",
+  "./museu2.jpeg",
+  "./museu3.jpeg",
+  "./museu4.jpeg",
+  "./museu5.jpeg",
+  "./museu6.jpeg",
+  "./museu7.jpeg",
+]
 
 const Proj = () => {
   return (
-    <div className="w-full pb-20 lg:px-17 md:px-15 px-10 font-poppins">
+    <div id="projects" className="w-full pt-40 pb-20 lg:px-17 md:px-15 px-10 font-poppins">
       <div className="text-center md:text-3xl text-2xl font-bold mb-10">
         Projects
       </div>
       <div className="flex justify-center lg:w-5/6 w-full m-auto">
-          <div className="grid md:grid-cols-2 grid-cols-1 xl:gap-96 lg:gap-34 md:gap-28 gap-12">
+          <div className="grid md:grid-cols-2 grid-cols-1 xl:gap-34 lg:gap-34 md:gap-14">
               <div>
                 <div className="text-xl font-bold mb-2">
                   Historical Museum of the Ribeirão Preto Medical School
                 </div>
-                <div>
-                   <SwipeCarousel images={imgs}></SwipeCarousel>
+                <div className="">
+                   <SwipeCarousel images={museu}></SwipeCarousel>
                 </div>
-                <div className="text-xl">
+                <div className="text-xl md:mb-0 mb-8">
                   <div className="mb-3">
                     Collaborate on the creation of website for the Historical Museum Of Ribeirão Preto Medical School, that allows
                     people see items of the museum.
@@ -42,11 +54,11 @@ const Proj = () => {
                 </div>
               </div>
               <div>
-                <div className="text-xl font-bold mb-2">
+                <div className="text-xl font-bold lg:mb-2 md:mb-9">
                   Solar Energy Company
                 </div>
                 <div>
-                  <SwipeCarousel images={imgs}></SwipeCarousel>
+                  <SwipeCarousel images={fsolar}></SwipeCarousel>
                 </div>
                 <div className="text-xl">
                   <div className="mb-3">
