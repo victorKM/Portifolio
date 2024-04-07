@@ -2,6 +2,7 @@
 
 import { IoMenu } from "react-icons/io5";
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-scroll/modules';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -36,16 +37,24 @@ const Navbar = () => {
         <div className={`md:block hidden`}>
           <ul className="lg:text-xl text-lg font-bold flex md:flex-row flex-col md:space-x-8 md:space-y-0 space-y-4 md:mt-0 mt-8">
             <li className="pb-2 border-b-2 border-gray border-opacity-70 hover:border-opacity-100 hover:border-mid-blue hover:cursor-pointer text-black transition duration-500">
-              <a href="#about">About Me</a>
+                <Link activeClass="active" to="about" spy={true} smooth={true} duration={500}>
+                  About me
+                </Link>
             </li>
             <li className="pb-2 border-b-2 border-gray border-opacity-70 hover:border-opacity-100 hover:border-mid-blue hover:cursor-pointer text-black transition duration-500">
-              <a href="#technologies">Technologies</a>
+                <Link activeClass="active" to="technologies" spy={true} smooth={true} duration={500}>
+                  Technologies
+                </Link>
             </li>
             <li className="pb-2 border-b-2 border-gray border-opacity-70 hover:border-opacity-100 hover:border-mid-blue hover:cursor-pointer text-black transition duration-500">
-              <a href="#projects">Projects</a>
+                <Link activeClass="active" to="projects" spy={true} smooth={true} duration={500}>
+                  Projects
+                </Link>
             </li>
-            <li className="pb-2 border-b-2 border-gray border-opacity-70 hover:border-opacity-100 hover:border-mid-blue hover:cursor-pointer text-black transition duration-5  00">
-              <a href="#contact">Contact</a>
+            <li className="pb-2 border-b-2 border-gray border-opacity-70 hover:border-opacity-100 hover:border-mid-blue hover:cursor-pointer text-black transition duration-500">
+                <Link activeClass="active" to="contact" spy={true} smooth={true} duration={700}>
+                  Contact
+                </Link>
             </li>
           </ul>
         </div>
@@ -54,16 +63,24 @@ const Navbar = () => {
       <div className={`fixed top-16 bg-gray bg-opacity-95 text-white text-lg font-bold px-10 py-10 md:hidden transition-all ease-in duration-300 w-full z-10 ${open ? '' : 'transform -translate-y-full'}`}>
         <ul className={`text-lg text-black font-bold flex flex-col md:space-x-8 md:space-y-0 space-y-4 md:mt-0`}>
           <li className="transition duration-300 hover:translate-y-[-3px] hover:cursor-pointer">
-            <a href="#about">About Me</a>
+              <Link activeClass="active" to="about" spy={true} smooth={true} duration={500}>
+                About me
+              </Link>
           </li>
           <li className="transition duration-300 hover:translate-y-[-3px] hover:cursor-pointer">
-            <a href="#technologies">Technologies</a>
+              <Link activeClass="active" to="technologies" spy={true} smooth={true} duration={500}>
+                  Technologies
+              </Link>
           </li>
           <li className="transition duration-300 hover:translate-y-[-3px] hover:cursor-pointer">
-            <a href="#projects">Projects</a>
+              <Link activeClass="active" to="projects" spy={true} smooth={true} duration={500}>
+                Projects
+              </Link>
           </li>
           <li className="transition duration-300 hover:translate-y-[-3px] hover:cursor-pointer">
-            <a href="#contact">Contact</a>
+              <Link activeClass="active" to="contact" spy={true} smooth={true} duration={700}>
+                Contact
+              </Link>
           </li>
         </ul>
       </div>
