@@ -40,16 +40,14 @@ const About = () => {
             <div
               className='bg-light-blue md:text-md text-sm inline-block lg:px-6 md:px-5 px-3 md:py-3 py-3 rounded-md transition-transform transition duration-500 
               transform hover:scale-105 text-white'
-              onClick={() => handleDownload('a')}
-              // https://drive.usercontent.google.com/u/0/uc?id=1T3ymFHTGxWoiUnteDBwTxRR0gFqJoqXP&export=download
+              onClick={() => handleDownload('https://drive.usercontent.google.com/u/0/uc?id=1nCGImBUcO32ZZLRWZXa0svi6fYdNX2Ll&export=download')}
             >
               Download CV
             </div>
             <div
               className='bg-light-blue md:text-md text-sm inline-block lg:px-6 md:px-5 px-3 md:py-3 py-3 rounded-md transition-transform 
               transition duration-500 transform hover:scale-105 text-white'
-              onClick={() => handleDownload('a')}
-              //https://drive.usercontent.google.com/u/0/uc?id=10gS9O20-4CYOyKyZ95GUMm0SJOrNyUiI&export=download
+              onClick={() => handleDownload('https://drive.usercontent.google.com/u/0/uc?id=1JFKM3MJvcbKZ80MmYvAPjb1YBbeefOcG&export=download')}
             >
               Download CV(en)
             </div>
