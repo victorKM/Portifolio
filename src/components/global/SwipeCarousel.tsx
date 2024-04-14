@@ -103,7 +103,7 @@ const Images = ({imgIndex, images} : {imgIndex: number; images: string[]}) => {
                 scale: imgIndex === idx ? 1.0 : 0.85,
               }}
               transition = {SPRING_OPTIONS}
-              className="w-full h-96 shrink-0 rounded-xl object-cover"
+              className="w-full md:h-96 h-48 shrink-0 rounded-xl object-cover"
             />
       );
     })}

@@ -30,8 +30,8 @@ const Proj = () => {
       <div className="text-center md:text-3xl text-2xl font-bold mb-10">
         Projects
       </div>
-      <div className="flex justify-center lg:w-5/6 w-full m-auto">
-          <div className="grid md:grid-cols-2 grid-cols-1 xl:gap-34 lg:gap-34 md:gap-14">
+      <div className="flex justify-center lg:w-5/6 md:w-11/12 w-full m-auto">
+          <div className="grid lg:grid-cols-2 grid-cols-1 xl:gap-34 lg:gap-34 md:gap-14">
               <div>
                 <div className="text-xl font-bold mb-2">
                   Historical Museum of the Ribeirão Preto Medical School
